@@ -1,4 +1,4 @@
-# Hubstaff's Vue Challenge
+# RemoteCrew Vue Challenge
 The goal of this exercise is to assess candidates' frontend development skills with Vue.js. 
 
 As you go through the pair programming session, it's helpful to share what you're thinking as it helps us understand your strategy and makes it easier to provide hints if/when necessary.
@@ -7,12 +7,17 @@ There are multiple correct ways to implement a solution for this challenge. Done
 
 ## Prerequisites
 - Git
-- npm
+- npm (Node v12)
 
 ## Project Setup
 Clone the project
 ```
-git clone https://github.com/NetsoftHoldings/hubstaff-vue-challenge.git && cd hubstaff-vue-challenge/
+git clone git@github.com:remotecrew/vue.js-challenge-template.git && cd vue.js-challenge-template/
+```
+
+Run with Node v12 
+```
+nvm use lts/erbium
 ```
 
 Install the dependencies
@@ -31,14 +36,14 @@ Check the project running on localhost:
 #### Please set up your working environment before the interview (working server, npm dependencies), so we don't spend time installing anything.
 
 ## Project Description
-At Hubstaff, we're building a time tracking product. One of the features we need to implement is allowing **Organization Admins** to check information regarding the **Members** of their teams. 
+The feature you need to implement is allowing **Organization Admins** to check information regarding the **Members** of their teams.
 
 ![Members Screenshot](./src/assets/img/members-screen.png)
 
 The challenge proposed is to implement the **Members** tab just like you see it on the image above. Feel free to add the **Invites** tab as disabled, so it can't be navigated to.
 
 The data for the **Members** belonging to this **Organization** should be fetched from the following url address:
-[https://run.mocky.io/v3/34234632-e36c-450d-a0a5-63249d1fa3ad](https://run.mocky.io/v3/34234632-e36c-450d-a0a5-63249d1fa3ad)
+[https://run.mocky.io/v3/3d8c4e8b-86b0-457d-937d-854fe02f0949](https://run.mocky.io/v3/3d8c4e8b-86b0-457d-937d-854fe02f0949)
 
 Here's what the response should look like:
 ```
@@ -47,9 +52,9 @@ Here's what the response should look like:
   "members": [
     {
       "id": 1,
-      "name": "Jared Brown",
+      "name": "Alexander Carson",
       "role": "Owner",
-      "projects": 8,
+      "projects": 10,
       "payment": null,
       "limits": {
         "weekly": null,
@@ -59,21 +64,21 @@ Here's what the response should look like:
     },
     {
       "id": 2,
-      "name": "Adrian Goia",
+      "name": "Tom Wright",
       "role": "Viewer",
-      "projects": 5,
+      "projects": 7,
       "payment": null,
       "limits": {
-        "weekly": 50,
-        "daily": 8
+        "weekly": 20,
+        "daily": 4
       },
       "time_tracking": "enabled"
     },
     {
       "id": 3,
-      "name": "Cody Rogers",
+      "name": "Zack Hiddleston",
       "role": "Viewer",
-      "projects": 8,
+      "projects": 10,
       "payment": null,
       "limits": {
         "weekly": 40,
@@ -109,10 +114,7 @@ We've configured the project using the following tech stack:
 Please use these technologies for the challenge. Where we don't specify any tool (ex: fetching external resources) feel free to use what you're most comfortable with. 
 
 ## Submission
-Please clone the repository and create a private repository on your own account. Then, create a new branch and submit a Pull Request with your proposed solution. Make sure to add and request review on the PR of the following github users:
-- @miguelcdpmarques
-- @stafie
-- @jbrowning
+Please clone the repository and create a private repository on your own account. Then, create a new branch and submit a Pull Request with your proposed solution. Make sure to add and request review on the PR.
 
 ## Evaluation Criteria
 We'll be looking at the following criteria when assessing candidate submissions:
